@@ -3,6 +3,7 @@
 const btnStart = document.getElementById('start-clock');
 const btnStop = document.getElementById('stop-clock');
 const clocker = document.getElementById('clock-buttons');
+const dark = document.getElementById('dark');
 
     let tim = setInterval(time , 1000);
     function time() {
