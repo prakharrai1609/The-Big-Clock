@@ -45,12 +45,17 @@ function countdown() {
     // console.log(seconds , minutes , hours);
 }
 
-start.addEventListener('click', () => {
-    clock = setInterval(countdown, 1000);
-})
+let started = 0;
+if (started == 0) {
+    start.addEventListener('click', () => {
+        clock = setInterval(countdown, 1000);
+        started = 1;
+    })
+}
 
 stop.addEventListener('click', () => {
     clearInterval(clock);
+    started = 0;
 })
 
 reset.addEventListener('click', () => {
