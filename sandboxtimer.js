@@ -46,12 +46,14 @@ function countdown() {
 }
 
 let started = 0;
-if (started == 0) {
-    start.addEventListener('click', () => {
+
+start.addEventListener('click', () => {
+    if (!started) {
         clock = setInterval(countdown, 1000);
-        started = 1;
-    })
-}
+    }
+    started = 1;
+})
+
 
 stop.addEventListener('click', () => {
     clearInterval(clock);
