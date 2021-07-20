@@ -4,7 +4,7 @@ const sec = document.getElementById('sec');
 const start = document.getElementById('start');
 const stop = document.getElementById('stop');
 const reset = document.getElementById('reset');
-const dark = document.getElementById('dark-button');
+const darkButton = document.getElementById('dark-button');
 
 let hours = 0;
 let minutes = 0;
@@ -68,16 +68,16 @@ reset.addEventListener('click', () => {
 
 let checker = 1;
 
-dark.addEventListener("click", () => {
-        if (checker) {
+darkButton.addEventListener("click", () => {
+        if (checker === 1) {
                 document.body.style.backgroundColor = "#444444";
                 document.body.style.color = "#EDEDED";
                 dark.textContent = "☀";
-                checker--;
+                checker = 0;
         } else {
                 document.body.style.backgroundColor = "#EDEDED";
                 document.body.style.color = "#444444";
                 dark.textContent = "🌑";
-                checker++;
+                checker = 1;
         }
 })
