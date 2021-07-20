@@ -66,18 +66,18 @@ reset.addEventListener('click', () => {
 })
 
 
-let check = 1;
+let checker = 1;
 
 dark.addEventListener("click", () => {
-        if (check) {
+        if (checker) {
                 document.body.style.backgroundColor = "#444444";
                 document.body.style.color = "#EDEDED";
                 dark.textContent = "☀";
-                check--;
+                checker--;
         } else {
                 document.body.style.backgroundColor = "#EDEDED";
                 document.body.style.color = "#444444";
                 dark.textContent = "🌑";
-                check++;
+                checker++;
         }
 })
