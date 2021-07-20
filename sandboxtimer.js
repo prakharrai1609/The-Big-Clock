@@ -65,6 +65,7 @@ reset.addEventListener('click', () => {
     hours = 0;
     minutes = 0;
     seconds = 0;
+    started = 0;
     clock;
 
     sec.textContent = "0" + seconds;
