@@ -69,7 +69,7 @@ reset.addEventListener('click', () => {
 let checker = 1;
 
 darkButton.addEventListener("click", () => {
-        if (checker === 1) {
+        if (checker == 1) {
                 document.body.style.backgroundColor = "#444444";
                 document.body.style.color = "#EDEDED";
                 dark.textContent = "☀";
