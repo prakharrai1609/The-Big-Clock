@@ -4,6 +4,7 @@ const sec = document.getElementById('sec');
 const start = document.getElementById('start');
 const stop = document.getElementById('stop');
 const reset = document.getElementById('reset');
+const dark = document.getElementById('dark');
 
 let hours = 0;
 let minutes = 0;
