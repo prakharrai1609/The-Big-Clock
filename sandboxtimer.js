@@ -50,8 +50,8 @@ let started = 0;
 start.addEventListener('click', () => {
     if (!started) {
         clock = setInterval(countdown, 1000);
+        started = 1;
     }
-    started = 1;
 })
 
 
